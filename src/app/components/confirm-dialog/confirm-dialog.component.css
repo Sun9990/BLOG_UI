@@ -1,0 +1,15 @@
+.mat-dialog-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .close-button {
+    position:absolute;
+    top: 5px;
+    right: 5px;
+    background-color: white;
+    color: rgb(106, 17, 17);
+  }
+  
+  

@@ -1,0 +1,21 @@
+<a routerLink="/" ><app-button text="Home"  color="green"></app-button></a>
+<app-button text="Edit"   
+        color="{{showEditBlog ? 'maroon' : 'grey'}}" 
+        text="{{showEditBlog ? 'Close Edit Post' : 'Edit Post'}}" 
+        (btnClick)="toggleEditBlog()"></app-button>
+<app-button  text="Delete"  color="maroon" (click)="onDeletePost(blog)"></app-button>
+
+<!-- <div *ngIf="setDesc" class="blog" >Title : {{blog?.title}}</div>
+<div *ngIf="setDesc" class="blog">Description : {{blog?.desc}}</div>
+<div *ngIf="setDesc" class="blog">Post posted on : {{blog?.current_time["$date"]}}</div>
+<div *ngIf="setDesc" class="blog">Post last updated :{{blog?.updated_time["$date"]}} </div>
+
+<div *ngIf="!setDesc" class="blog" >Post Deleted</div>  -->
+
+<div  class="blog" >Title : {{blog?.title}}</div>
+<div  class="blog">Description : {{blog?.desc}}</div>
+<div  class="blog">Post posted on : {{blog?.current_time}}</div>
+<div  class="blog">Post last updated :{{blog?.updated_time}} </div>
+
+ 
+

@@ -1,0 +1,6 @@
+<div class="blog">
+    <h3>
+     <a *ngIf="blog._id?.$oid" routerLink="/postdetails/{{blog._id.$oid}}">{{blog.title}}</a>
+    <app-button text="Delete" color="maroon" (click)="onDelete(blog)"></app-button></h3>
+</div>  
+

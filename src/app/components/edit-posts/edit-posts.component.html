@@ -1,0 +1,11 @@
+<form *ngIf="showEditBlog" class="add-form">
+    <div class="form-control">
+        <label for="title">New Title</label>
+        <input type="text" name="title" [(ngModel)]="title" id="title" placeholder="Enter new title"/>
+    </div>
+    <div class="form-control">
+        <label for="desc">New Description</label>
+        <input type="text" name="desc" [(ngModel)]="desc" id="desc" placeholder="Enter new description"/>
+    </div>
+    <input type="submit" (click)="onSubmit()" class="btn btn-block" value="Save Edited Post"/>
+</form>

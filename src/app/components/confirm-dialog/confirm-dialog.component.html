@@ -1,0 +1,12 @@
+<mat-dialog-content>{{data.message}}
+  <!-- <span class="content-span full width">{{data.message}}</span> -->
+</mat-dialog-content>
+
+<!-- <button mat-icon-button mat-dialog-close class="close-button">
+    <mat-icon class="close-icon" color="warn" (click)="closeDialog()">X</mat-icon>
+</button> -->
+
+<mat-dialog-actions>
+        <button id="no-button" [mat-dialog-close]="false">NO</button>
+        <button id="yes-button" [mat-dialog-close]="true">YES</button>
+</mat-dialog-actions>
